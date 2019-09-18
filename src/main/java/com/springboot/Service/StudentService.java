@@ -18,4 +18,16 @@ public class StudentService {
         return this.studentDao.getAllStudents();
 
     }
+
+    public Student getById (int id){
+        return this.studentDao.getById(id);
+    }
+
+    public void removeStudentById(int id) {
+        this.studentDao.removeStudentById(id);
+    }
+
+    public void updateStudent(Student student){
+        this.studentDao.updateStudent(student);
+    }
 }
