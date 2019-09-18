@@ -3,6 +3,7 @@ package com.springboot.Service;
 import com.springboot.Dao.StudentDao;
 import com.springboot.Entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -11,6 +12,7 @@ import java.util.Collection;
 public class StudentService {
 
     @Autowired
+    @Qualifier("fakeData")
     private StudentDao studentDao;
 
     public Collection<Student> getAllStudents() {
@@ -29,5 +31,9 @@ public class StudentService {
 
     public void updateStudent(Student student){
         this.studentDao.updateStudent(student);
+    }
+
+    public void insertStudent(Student student) {
+        this.studentDao.insertStudent(student);
     }
 }
