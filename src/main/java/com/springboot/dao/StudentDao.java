@@ -1,6 +1,6 @@
-package com.springboot.Dao;
+package com.springboot.dao;
 
-import com.springboot.Entity.Student;
+import com.springboot.entity.Student;
 
 import java.util.Collection;
 

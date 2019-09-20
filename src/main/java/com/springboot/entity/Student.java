@@ -1,4 +1,4 @@
-package com.springboot.Entity;
+package com.springboot.entity;
 
 public class Student {
 

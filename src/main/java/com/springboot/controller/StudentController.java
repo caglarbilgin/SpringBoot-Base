@@ -1,16 +1,16 @@
-package com.springboot.Controller;
+package com.springboot.controller;
 
-import com.springboot.Entity.Student;
-import com.springboot.Service.StudentService;
+import com.springboot.entity.Student;
+import com.springboot.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.*;
 import java.util.Collection;
 
 @RestController
 @RequestMapping("/students")
+@CrossOrigin
 public class StudentController {
 
     @Autowired
